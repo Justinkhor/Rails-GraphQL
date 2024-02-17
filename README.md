@@ -1,24 +1,24 @@
-# README
+# Rails-GraphQL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Deployment
 
-Things you may want to cover:
+Below are the steps to reproduce for local deployment:
+1. Build Docker Image
+    ```bash
+    docker-compose build
+    ```
 
-* Ruby version
+2. Run the service
+    ```bash
+    docker-compose up
+    ```
 
-* System dependencies
+3. Make curl.sh executable
+    ```bash
+    chmod +x curl.sh
+    ```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+4. Test the service
+    ```bash
+    ./curl.sh
+    ```
