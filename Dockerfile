@@ -14,6 +14,9 @@ RUN bundle install
 # Copy the rest of the application code
 COPY . .
 
+# Run database migrations and seeding
+RUN bundle exec rails db:create db:migrate db:seed
+
 # Expose port 3000 (or the port your Rails server is running on)
 EXPOSE 3000
 
